@@ -1,22 +1,25 @@
 {
-    "name": "protfulio",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/candycrab/protfulio.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/candycrab/protfulio/issues"
-    },
-    "homepage": "https://github.com/candycrab/protfulio#readme",
-    "dependencies": {
-      "bootstrap": "^4.5.0"
-    }
+  "name": "ah.me",
+  "version": "1.0.0",
+  "description": "(It is fully responsive portfollio website.)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdulhay103/AH.me-With-Scss.git"
+  },
+  "keywords": [
+    "OK"
+  ],
+  "author": "Abdul Hay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdulhay103/AH.me-With-Scss/issues"
+  },
+  "homepage": "https://github.com/abdulhay103/AH.me-With-Scss#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0"
   }
+}
