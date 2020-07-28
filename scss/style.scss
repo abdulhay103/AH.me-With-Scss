@@ -1,33 +1,40 @@
 // @import "config";
+@import "utilities";
 $fonts: Arial, Helvetica, sans-serif;
 $background_color: #f4f4f4;
 $primary_color: #f99027;
 $secondary_color: #3498db;
 $other_color: rgba(181, 170, 170, 0.4);
 
-ul,
-li,
-h1,
-h2,
-h3,
-h4,
-h6,
-p,
-a {
+body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+// ul,
+// li,
+// h1,
+// h2,
+// h3,
+// h4,
+// h6,
+// p,
+// a {
+//   margin: 0;
+//   padding: 0;
+// }
 
 ul {
   display: flex;
   li {
     list-style-type: none;
-    padding: 0 10px;
     a {
+      padding: 10px;
       color: #000;
       font-weight: 600;
       letter-spacing: 2px;
-      transition: 0.5;
+      transition: 0.8;
       &:hover {
         text-decoration: none;
         color: $primary_color;
@@ -42,20 +49,65 @@ ul {
   justify-content: space-between;
 
   .brand {
-    h2 {
-      font-family: $fonts;
-      font-weight: 900;
-      font-size: 2em;
-      letter-spacing: 5px;
-
-      span {
+    a {
+      color: #000;
+      text-decoration: none;
+      &:hover {
         color: $primary_color;
+        span {
+          color: #000;
+        }
+      }
+      h2 {
+        font-family: $fonts;
+        font-weight: 900;
+        font-size: 2em;
+        letter-spacing: 5px;
+        transition: 0.7;
+        &:hover {
+          transform: rotate(5deg);
+        }
+
+        span {
+          color: $primary_color;
+        }
       }
     }
   }
   .nav {
-    // .navItems {
-    //   display: flex;
-    // }
+    .navItems {
+      li {
+        &:hover {
+          transform: rotate(5deg);
+        }
+        a {
+          animation: manueAnimation 7s infinite;
+        }
+      }
+    }
+  }
+}
+
+.socialIcons {
+  li {
+    a {
+      animation: manueAnimation 10s infinite;
+      i:hover {
+        transform: rotate(10deg);
+      }
+    }
+  }
+}
+
+// Animation Frames
+@keyframes manueAnimation {
+  0% {
+    color: $primary_color;
+  }
+  50% {
+    color: #000;
+  }
+  100% {
+    color: $primary_color;
   }
 }
